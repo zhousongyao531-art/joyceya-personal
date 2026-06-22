@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" fill="none">
+  <rect width="900" height="720" fill="#080713"/>
+  <circle cx="736" cy="126" r="210" fill="#7DE3FF" fill-opacity="0.16"/>
+  <circle cx="190" cy="590" r="260" fill="#7B61FF" fill-opacity="0.22"/>
+  <rect x="98" y="96" width="704" height="496" rx="34" fill="#F7F1EA" fill-opacity="0.07" stroke="#F7F1EA" stroke-opacity="0.16"/>
+  <rect x="132" y="132" width="636" height="62" rx="20" fill="#F7F1EA" fill-opacity="0.1"/>
+  <rect x="166" y="246" width="296" height="236" rx="26" fill="#C9B8FF" fill-opacity="0.18"/>
+  <rect x="498" y="246" width="236" height="64" rx="24" fill="#7DE3FF" fill-opacity="0.3"/>
+  <rect x="498" y="340" width="194" height="26" rx="13" fill="#F7F1EA" fill-opacity="0.26"/>
+  <rect x="498" y="392" width="236" height="26" rx="13" fill="#F7F1EA" fill-opacity="0.16"/>
+  <rect x="498" y="444" width="154" height="48" rx="24" fill="#7B61FF" fill-opacity="0.54"/>
+  <path d="M188 426L282 320L352 390L424 292" stroke="#FCD34D" stroke-opacity="0.58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="650" fill="#F7F1EA" fill-opacity="0.86" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Signal Web Studio</text>
+</svg>
