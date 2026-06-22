@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="294" height="64" viewBox="0 0 294 64" fill="none">
+  <rect width="64" height="64" rx="18" fill="url(#paint0_linear)" />
+  <path d="M33.5 15C43.717 15 52 23.059 52 33C52 42.941 43.717 51 33.5 51C23.283 51 15 42.941 15 33C15 23.059 23.283 15 33.5 15Z" fill="white" fill-opacity="0.12"/>
+  <path d="M24 21.5V38C24 43.247 27.753 46.5 32.5 46.5C37.247 46.5 41 43.247 41 38V26.5" stroke="#FBFAF8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M41 18.5V18" stroke="#FCD34D" stroke-width="5" stroke-linecap="round"/>
+  <text x="82" y="42" fill="#FBFAF8" font-family="General Sans, Inter, Arial, sans-serif" font-size="33" font-weight="600" letter-spacing="0">joyceya</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="58" y1="7" x2="5" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="0.52" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#FCD34D"/>
+    </linearGradient>
+  </defs>
+</svg>

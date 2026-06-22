@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" fill="none">
+  <rect width="900" height="720" fill="#17142F"/>
+  <rect x="84" y="88" width="732" height="544" rx="34" fill="#F7F1EA" fill-opacity="0.08" stroke="#F7F1EA" stroke-opacity="0.15"/>
+  <circle cx="266" cy="284" r="112" fill="#C9B8FF" fill-opacity="0.42"/>
+  <rect x="404" y="178" width="260" height="52" rx="26" fill="#7DE3FF" fill-opacity="0.32"/>
+  <rect x="404" y="260" width="320" height="30" rx="15" fill="#F7F1EA" fill-opacity="0.22"/>
+  <rect x="404" y="316" width="242" height="30" rx="15" fill="#F7F1EA" fill-opacity="0.14"/>
+  <rect x="148" y="468" width="604" height="76" rx="24" fill="#7B61FF" fill-opacity="0.32"/>
+  <path d="M160 408C256 342 332 470 428 404C524 338 586 432 740 356" stroke="#FCD34D" stroke-opacity="0.56" stroke-width="4" stroke-linecap="round"/>
+  <text x="122" y="620" fill="#F7F1EA" fill-opacity="0.86" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Living Brand Atlas</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" fill="none">
+  <rect width="900" height="720" fill="#111026"/>
+  <circle cx="248" cy="168" r="260" fill="#7B61FF" fill-opacity="0.28"/>
+  <circle cx="674" cy="238" r="250" fill="#7DE3FF" fill-opacity="0.16"/>
+  <circle cx="478" cy="384" r="252" fill="#C9B8FF" fill-opacity="0.12"/>
+  <g transform="translate(450 360)">
+    <circle r="222" stroke="#F7F1EA" stroke-opacity="0.14"/>
+    <circle r="168" stroke="#7DE3FF" stroke-opacity="0.28"/>
+    <circle r="98" stroke="#C9B8FF" stroke-opacity="0.42"/>
+    <circle r="38" fill="#F7F1EA" fill-opacity="0.14"/>
+    <path d="M-232 0C-140-95 140-95 232 0C140 95-140 95-232 0Z" stroke="#F7F1EA" stroke-opacity="0.32" stroke-width="2"/>
+    <path d="M-162-58C-62-122 82-122 162-58" stroke="#7DE3FF" stroke-opacity="0.42" stroke-width="2"/>
+    <path d="M-162 58C-62 122 82 122 162 58" stroke="#FCD34D" stroke-opacity="0.34" stroke-width="2"/>
+  </g>
+  <path d="M90 610H810" stroke="#F7F1EA" stroke-opacity="0.16"/>
+  <text x="90" y="660" fill="#F7F1EA" fill-opacity="0.86" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Iris Intelligence</text>
+</svg>
