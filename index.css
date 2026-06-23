@@ -555,6 +555,24 @@ h2 {
   letter-spacing: -0.024em;
 }
 
+.about-portrait {
+  width: min(100%, 420px);
+  margin: var(--space-6) 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(247, 241, 234, 0.14);
+  border-radius: var(--radius-lg);
+  background: rgba(247, 241, 234, 0.05);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 82% 50%;
+}
+
 .section-copy p,
 .capability-card p,
 .process-list p,
