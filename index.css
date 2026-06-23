@@ -924,6 +924,99 @@ h2 {
   margin-top: var(--space-5);
 }
 
+.deck-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.deck-viewer {
+  position: sticky;
+  top: 112px;
+  min-height: 640px;
+  overflow: hidden;
+  border: 1px solid rgba(247, 241, 234, 0.16);
+  border-radius: var(--radius-lg);
+  background: rgba(247, 241, 234, 0.05);
+}
+
+.deck-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 640px;
+  border: 0;
+  background: rgba(247, 241, 234, 0.04);
+}
+
+.deck-open-link {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(247, 241, 234, 0.2);
+  border-radius: var(--radius-pill);
+  padding: 10px 14px;
+  color: var(--color-foreground);
+  background: rgba(8, 7, 19, 0.78);
+  font-size: 13px;
+  font-weight: 800;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.deck-notes {
+  min-width: 0;
+}
+
+.language-toggle {
+  width: fit-content;
+  margin: 0 0 var(--space-5);
+  display: flex;
+  gap: 4px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+  background: rgba(247, 241, 234, 0.06);
+}
+
+.language-toggle button {
+  min-height: 36px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 8px 14px;
+  color: var(--color-muted);
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.language-toggle button.is-active {
+  color: var(--color-bg);
+  background: var(--color-cyan);
+}
+
+.deck-notes h2 {
+  margin-bottom: var(--space-5);
+  font-size: clamp(32px, 4vw, 52px);
+}
+
+.deck-notes section + section {
+  margin-top: var(--space-5);
+}
+
+.deck-notes h3 {
+  margin: 0 0 8px;
+  color: var(--color-foreground);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .back-row {
   margin-top: var(--space-6);
 }
@@ -979,9 +1072,21 @@ h2 {
   }
 
   .section-grid,
-  .detail-hero {
+  .detail-hero,
+  .deck-section {
     grid-template-columns: 1fr;
     gap: var(--space-6);
+  }
+
+  .deck-viewer {
+    position: relative;
+    top: auto;
+    min-height: 520px;
+  }
+
+  .deck-viewer iframe {
+    height: 520px;
+    min-height: 520px;
   }
 
   .project-grid,
