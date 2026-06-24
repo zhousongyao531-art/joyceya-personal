@@ -328,18 +328,15 @@ video {
   margin: 12px 0 0;
   color: var(--color-foreground);
   font-family: var(--font-display);
-  font-size: 124px;
+  font-size: 108px;
   font-weight: 500;
-  line-height: 0.96;
+  line-height: 1;
   letter-spacing: 0;
 }
 
 .headline span {
-  color: transparent;
-  background-image: linear-gradient(110deg, var(--color-cyan), var(--color-lavender), var(--color-iris), var(--color-amber));
-  background-size: 180% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
+  display: inline-block;
+  color: var(--color-foreground);
 }
 
 .positioning,
@@ -1369,7 +1366,7 @@ h2 {
   }
 
   .headline {
-    font-size: 92px;
+    font-size: 76px;
   }
 
   h2 {
@@ -1486,7 +1483,7 @@ h2 {
   }
 
   .headline {
-    font-size: 66px;
+    font-size: 56px;
   }
 
   h2 {
@@ -1605,7 +1602,7 @@ h2 {
   }
 
   .headline {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   h2 {
