@@ -3,6 +3,7 @@ const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
 const revealItems = document.querySelectorAll(".reveal");
+const languageSwitchers = document.querySelectorAll("[data-language-switcher]");
 const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 if (video) {
@@ -102,6 +103,25 @@ if (menuToggle && navMenu) {
     }
   });
 }
+
+languageSwitchers.forEach((switcher) => {
+  const buttons = switcher.querySelectorAll("[data-language-button]");
+  const panels = switcher.querySelectorAll("[data-language-panel]");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const language = button.getAttribute("data-language-button");
+
+      buttons.forEach((item) => {
+        item.classList.toggle("is-active", item === button);
+      });
+
+      panels.forEach((panel) => {
+        panel.hidden = panel.getAttribute("data-language-panel") !== language;
+      });
+    });
+  });
+});
 
 if (reducedMotionQuery.matches) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
