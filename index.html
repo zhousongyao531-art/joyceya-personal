@@ -1,131 +1,338 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>百度搜索广告关键词拓展工具</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="joyceya portfolio - To see and to be seen are both forms of capability."
+    />
+    <title>joyceya Portfolio</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./src/assets/logo.png" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <main class="app-shell">
-      <section class="hero">
-        <div class="hero-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" role="img">
-            <path d="M12 2.8 14.4 9l6.5 2.4-6.5 2.4L12 20.2l-2.4-6.4-6.5-2.4L9.6 9 12 2.8Z"></path>
-            <path d="M19 3.5v4"></path>
-            <path d="M21 5.5h-4"></path>
-          </svg>
+    <header class="site-header" data-header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="joyceya home">
+          <img src="./src/assets/logo.png" width="147" height="32" alt="joyceya" />
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="primary-navigation" data-nav-menu>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div>
-          <h1>百度搜索广告关键词拓展工具</h1>
-          <p>支持 AI 智能拓词、全网抓取和自动去重</p>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero-section section-panel" id="home" aria-label="joyceya portfolio hero">
+        <video
+          class="hero-video"
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_065045_c44942da-53c6-4804-b734-f9e07fc22e08.mp4"
+          muted
+          playsinline
+          preload="auto"
+          aria-hidden="true"
+        ></video>
+
+        <div class="hero-ambient" aria-hidden="true"></div>
+        <div class="iris-visual" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="hero-inner reveal">
+          <p class="eyebrow">joyceya / multidisciplinary creator</p>
+          <h1 class="headline">JOYCEYA <span>Portfolio</span></h1>
+          <p class="positioning">
+            Branding, data analysis, and AI-assisted visual systems for ideas that need to be
+            both understood and felt.
+          </p>
+          <p class="subtitle">To see and to be seen are both forms of capability.</p>
+          <div class="hero-actions" aria-label="Primary portfolio actions">
+            <a class="btn btn-primary" href="#work" aria-label="View selected projects">
+              View Projects
+              <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+            </a>
+            <a class="btn btn-secondary" href="#contact" aria-label="Contact joyceya">
+              Contact Me
+              <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="logo-marquee-section" aria-label="Creative territories">
+          <div class="logo-marquee-container">
+            <p class="trusted-copy">Explored across<br />systems and stories</p>
+            <div class="marquee-viewport">
+              <div class="marquee-track">
+                <div class="logo-item">
+                  <span class="liquid-glass logo-icon">B</span>
+                  <span>Branding</span>
+                </div>
+                <div class="logo-item">
+                  <span class="liquid-glass logo-icon">D</span>
+                  <span>Data</span>
+                </div>
+                <div class="logo-item">
+                  <span class="liquid-glass logo-icon">A</span>
+                  <span>AI Creator</span>
+                </div>
+                <div class="logo-item">
+                  <span class="liquid-glass logo-icon">I</span>
+                  <span>Interaction</span>
+                </div>
+                <div class="logo-item">
+                  <span class="liquid-glass logo-icon">W</span>
+                  <span>Web</span>
+                </div>
+                <div class="logo-item">
+                  <span class="liquid-glass logo-icon">S</span>
+                  <span>Strategy</span>
+                </div>
+                <div class="logo-item" aria-hidden="true">
+                  <span class="liquid-glass logo-icon">B</span>
+                  <span>Branding</span>
+                </div>
+                <div class="logo-item" aria-hidden="true">
+                  <span class="liquid-glass logo-icon">D</span>
+                  <span>Data</span>
+                </div>
+                <div class="logo-item" aria-hidden="true">
+                  <span class="liquid-glass logo-icon">A</span>
+                  <span>AI Creator</span>
+                </div>
+                <div class="logo-item" aria-hidden="true">
+                  <span class="liquid-glass logo-icon">I</span>
+                  <span>Interaction</span>
+                </div>
+                <div class="logo-item" aria-hidden="true">
+                  <span class="liquid-glass logo-icon">W</span>
+                  <span>Web</span>
+                </div>
+                <div class="logo-item" aria-hidden="true">
+                  <span class="liquid-glass logo-icon">S</span>
+                  <span>Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="input-grid" aria-label="关键词输入">
-        <label class="panel">
-          <span class="panel-title">种子关键词（每行一个）</span>
-          <textarea id="seedKeywords" spellcheck="false">高考
-志愿
-复读
-专业选择</textarea>
-        </label>
-
-        <label class="panel">
-          <span class="panel-title">账户已有关键词（每行一个，用于去重）</span>
-          <textarea id="existingKeywords" spellcheck="false" placeholder="例如：
-英语培训机构
-英语培训班
-在线英语学习"></textarea>
-        </label>
-      </section>
-
-      <section class="panel controls-panel">
-        <div class="target-row">
-          <label class="target-field">
-            <span class="panel-title">目标关键词数量</span>
-            <input id="targetCount" type="number" value="100" min="10" max="10000" step="10">
-            <small>建议范围：10-10000 个关键词</small>
-          </label>
-          <button id="toggleChannels" class="ghost-button" type="button">取消全选</button>
-        </div>
-
-        <div class="channel-heading">拓词渠道：</div>
-        <div id="channelList" class="channel-list"></div>
-
-        <div class="action-row">
-          <button id="expandButton" class="primary-button" type="button">
-            <span class="button-icon" aria-hidden="true">✦</span>
-            开始拓词
-          </button>
-          <button id="exportButton" class="secondary-button" type="button" disabled>
-            <span class="button-icon" aria-hidden="true">⇩</span>
-            导出 Excel
-          </button>
-          <button id="deleteButton" class="secondary-button" type="button" disabled>
-            删除选中
-          </button>
-          <button id="clearButton" class="secondary-button danger" type="button" disabled>
-            清空结果
-          </button>
-        </div>
-      </section>
-
-      <section class="panel result-panel">
-        <div class="result-header">
+      <section class="content-section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-grid reveal">
           <div>
-            <h2>拓词结果</h2>
-            <p id="summaryText">还没有结果，输入关键词后点击开始拓词。</p>
+            <p class="section-kicker">About</p>
+            <h2 id="about-title">A portfolio for sharp seeing and generous making.</h2>
           </div>
-          <div class="filters">
-            <label>
-              <span>来源</span>
-              <select id="sourceFilter">
-                <option value="all">全部来源</option>
-              </select>
-            </label>
-            <label>
-              <span>搜索</span>
-              <input id="keywordSearch" type="search" placeholder="搜索关键词">
-            </label>
-            <label>
-              <span>排序</span>
-              <select id="sortMode">
-                <option value="scoreDesc">评分从高到低</option>
-                <option value="scoreAsc">评分从低到高</option>
-                <option value="keywordAsc">关键词 A-Z</option>
-              </select>
-            </label>
+          <div class="section-copy">
+            <p>
+              joyceya works across brand systems, visual research, digital products, and
+              AI-assisted creation. The practice connects analytic clarity with expressive visual
+              direction, turning complex signals into experiences that feel coherent, memorable,
+              and useful.
+            </p>
+            <div class="tag-list" aria-label="Capability keywords">
+              <span>Branding</span>
+              <span>Data analysis</span>
+              <span>AI creator</span>
+              <span>Visual systems</span>
+              <span>Creative strategy</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div id="statusMessage" class="status-message" role="status"></div>
+      <section class="content-section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Selected Works</p>
+          <h2 id="work-title">Projects with atmosphere, structure, and a point of view.</h2>
+        </div>
 
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th class="check-col"><input id="selectAllRows" type="checkbox" aria-label="选择全部结果"></th>
-                <th>序号</th>
-                <th>关键词</th>
-                <th>来源渠道</th>
-                <th>分类</th>
-                <th>用户意图</th>
-                <th>推荐匹配方式</th>
-                <th>相关性评分</th>
-                <th>推荐理由</th>
-              </tr>
-            </thead>
-            <tbody id="resultBody">
-              <tr class="empty-row">
-                <td colspan="9">暂无关键词结果</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="project-grid">
+          <a
+            class="project-card reveal"
+            href="./project-iris.html"
+            aria-label="View Iris Intelligence case study"
+          >
+            <div class="project-cover">
+              <img src="./src/assets/project-iris.svg" alt="Iris Intelligence abstract cover" />
+              <span class="project-overlay" aria-hidden="true"></span>
+              <span class="case-link">View Case Study</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">AI visual system</p>
+              <h3>Iris Intelligence</h3>
+              <p>
+                A speculative identity and interface language for AI-assisted insight discovery.
+              </p>
+              <div class="tag-list compact">
+                <span>AI</span>
+                <span>Data story</span>
+                <span>Visual system</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="project-card reveal"
+            href="./project-branding.html"
+            aria-label="View Living Brand Atlas case study"
+          >
+            <div class="project-cover">
+              <img src="./src/assets/project-branding.svg" alt="Living Brand Atlas cover" />
+              <span class="project-overlay" aria-hidden="true"></span>
+              <span class="case-link">View Case Study</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Branding</p>
+              <h3>Living Brand Atlas</h3>
+              <p>
+                A modular brand direction system designed for a culture-forward digital studio.
+              </p>
+              <div class="tag-list compact">
+                <span>Identity</span>
+                <span>Art direction</span>
+                <span>Guidelines</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="project-card reveal"
+            href="./project-web.html"
+            aria-label="View Signal Web Studio case study"
+          >
+            <div class="project-cover">
+              <img src="./src/assets/project-web.svg" alt="Signal Web Studio interface cover" />
+              <span class="project-overlay" aria-hidden="true"></span>
+              <span class="case-link">View Case Study</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Frontend concept</p>
+              <h3>Signal Web Studio</h3>
+              <p>
+                A polished portfolio and product surface exploring motion, hierarchy, and trust.
+              </p>
+              <div class="tag-list compact">
+                <span>Web</span>
+                <span>Interaction</span>
+                <span>Prototype</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="content-section capabilities-section" aria-labelledby="capabilities-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skills / Capabilities</p>
+          <h2 id="capabilities-title">Capabilities shaped for modern creative work.</h2>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <span class="capability-index">01</span>
+            <h3>Visual Design</h3>
+            <p>
+              Brand systems, typography, color, editorial rhythm, moodboards, and polished
+              presentation design.
+            </p>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-index">02</span>
+            <h3>Interaction Design</h3>
+            <p>
+              User flows, screen hierarchy, motion intent, micro-interactions, and accessible
+              interface behaviors.
+            </p>
+          </article>
+          <article class="capability-card reveal">
+            <span class="capability-index">03</span>
+            <h3>Frontend Sense</h3>
+            <p>
+              Responsive layouts, component thinking, visual QA, and the judgment to make
+              interfaces feel finished.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section process-section" id="process" aria-labelledby="process-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Design Process</p>
+          <h2 id="process-title">From first signal to final system.</h2>
+        </div>
+
+        <ol class="process-list reveal" aria-label="Design process">
+          <li>
+            <span>Discover</span>
+            <p>Gather context, references, audience signals, and project constraints.</p>
+          </li>
+          <li>
+            <span>Define</span>
+            <p>Clarify the narrative, success criteria, and visual direction.</p>
+          </li>
+          <li>
+            <span>Design</span>
+            <p>Build expressive options through layout, type, color, motion, and systems.</p>
+          </li>
+          <li>
+            <span>Refine</span>
+            <p>Stress-test details, interaction states, responsiveness, and accessibility.</p>
+          </li>
+          <li>
+            <span>Deliver</span>
+            <p>Package the final experience with clear rationale and next-step readiness.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card reveal">
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Let's Work Together</h2>
+          <p>
+            Open to portfolio collaborations, brand explorations, AI-assisted creative systems,
+            and digital product concepts.
+          </p>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:hello@joyceya.com" aria-label="Email joyceya">hello@joyceya.com</a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn profile">LinkedIn</a>
+            <a href="https://www.behance.net" aria-label="Behance profile">Behance</a>
+          </div>
+          <a class="btn btn-primary contact-cta" href="mailto:hello@joyceya.com">
+            Let's Work Together
+            <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+          </a>
         </div>
       </section>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
