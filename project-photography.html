@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Works - joyceya Portfolio</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./src/assets/logo.png" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="detail-body">
+    <header class="site-header is-scrolled">
+      <nav class="site-nav" aria-label="Project navigation">
+        <a class="brand" href="./index.html#home" aria-label="Back to joyceya home">
+          <img src="./src/assets/logo.png" width="147" height="32" alt="joyceya" />
+        </a>
+        <a class="btn btn-secondary" href="./index.html#work" aria-label="Back to selected works">
+          Back to Home
+          <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+        </a>
+      </nav>
+    </header>
+    <main class="detail-main">
+      <section class="detail-hero reveal">
+        <div class="detail-copy">
+          <p class="section-kicker">Photography</p>
+          <h1>摄影作品</h1>
+          <p>
+            A rotating image installation for street light, reflections, architecture, and quiet
+            public scenes. Click any image on the arc to bring it into the center.
+          </p>
+        </div>
+        <aside class="detail-meta" aria-label="Project information">
+          <div><span>Format</span><p>Interactive photo gallery</p></div>
+          <div><span>Focus</span><p>Street, shadow, reflection, architecture</p></div>
+          <div><span>Interaction</span><p>Arc layout, click-to-center image switching</p></div>
+          <div><span>Output</span><p>Web-based visual installation</p></div>
+        </aside>
+      </section>
+
+      <section class="detail-panel photography-panel reveal" data-photo-gallery>
+        <div class="photo-stage" aria-label="Interactive photography carousel">
+          <figure class="photo-main-frame">
+            <img
+              src="./src/assets/photography/photo-reflection-street.jpg"
+              alt="Street reflection in a car window"
+              data-photo-main
+            />
+            <figcaption>
+              <p class="section-kicker" data-photo-counter>01 / 05</p>
+              <h2 data-photo-title>Reflected Street</h2>
+              <p data-photo-caption>
+                Tree shadows and city color fold into the car window, turning an ordinary road into
+                a layered reflection.
+              </p>
+            </figcaption>
+          </figure>
+
+          <div class="photo-orbit" aria-label="Select a photography work">
+            <button
+              type="button"
+              class="photo-orbit-item is-active"
+              style="--x: -400px; --y: 150px; --r: -14deg; --s: 0.74"
+              data-photo-src="./src/assets/photography/photo-reflection-street.jpg"
+              data-photo-alt="Street reflection in a car window"
+              data-photo-title="Reflected Street"
+              data-photo-caption="Tree shadows and city color fold into the car window, turning an ordinary road into a layered reflection."
+              data-photo-counter="01 / 05"
+              aria-label="Show Reflected Street"
+            >
+              <img src="./src/assets/photography/photo-reflection-street.jpg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="photo-orbit-item"
+              style="--x: -210px; --y: 52px; --r: -7deg; --s: 0.86"
+              data-photo-src="./src/assets/photography/photo-orange-wall.jpg"
+              data-photo-alt="A pedestrian walking through orange wall shadows"
+              data-photo-title="Walking Through Light"
+              data-photo-caption="Late light turns the wall into a moving field of orange shadows, placing the pedestrian inside a temporary stage."
+              data-photo-counter="02 / 05"
+              aria-label="Show Walking Through Light"
+            >
+              <img src="./src/assets/photography/photo-orange-wall.jpg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="photo-orbit-item"
+              style="--x: 0px; --y: 10px; --r: 0deg; --s: 0.96"
+              data-photo-src="./src/assets/photography/photo-city-sign.jpg"
+              data-photo-alt="Black and white city street with storefront signage"
+              data-photo-title="City Sign"
+              data-photo-caption="Dense signage, passing crowds, and a black-and-white palette compress the city into a sharp graphic frame."
+              data-photo-counter="03 / 05"
+              aria-label="Show City Sign"
+            >
+              <img src="./src/assets/photography/photo-city-sign.jpg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="photo-orbit-item"
+              style="--x: 210px; --y: 52px; --r: 7deg; --s: 0.86"
+              data-photo-src="./src/assets/photography/photo-seaside.jpg"
+              data-photo-alt="Black and white seaside with swimmers and chairs"
+              data-photo-title="Quiet Shore"
+              data-photo-caption="A wide seaside view leaves generous negative space, making the small human figures feel calm and cinematic."
+              data-photo-counter="04 / 05"
+              aria-label="Show Quiet Shore"
+            >
+              <img src="./src/assets/photography/photo-seaside.jpg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="photo-orbit-item"
+              style="--x: 400px; --y: 150px; --r: 14deg; --s: 0.74"
+              data-photo-src="./src/assets/photography/photo-architecture-shadow.jpg"
+              data-photo-alt="Black and white architecture with pedestrians and shadows"
+              data-photo-title="Architecture Shadow"
+              data-photo-caption="Columns, silhouettes, and passing bodies create a layered street composition between structure and motion."
+              data-photo-counter="05 / 05"
+              aria-label="Show Architecture Shadow"
+            >
+              <img src="./src/assets/photography/photo-architecture-shadow.jpg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="back-row reveal">
+        <a class="btn btn-primary" href="./index.html#work">
+          Back to Home
+          <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+        </a>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

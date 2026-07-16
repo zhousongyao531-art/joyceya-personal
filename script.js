@@ -4,6 +4,7 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
 const revealItems = document.querySelectorAll(".reveal");
 const languageSwitchers = document.querySelectorAll("[data-language-switcher]");
+const photoGalleries = document.querySelectorAll("[data-photo-gallery]");
 const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 if (video) {
@@ -121,6 +122,61 @@ languageSwitchers.forEach((switcher) => {
       });
     });
   });
+});
+
+photoGalleries.forEach((gallery) => {
+  const mainImage = gallery.querySelector("[data-photo-main]");
+  const title = gallery.querySelector("[data-photo-title]");
+  const caption = gallery.querySelector("[data-photo-caption]");
+  const counter = gallery.querySelector("[data-photo-counter]");
+  const items = Array.from(gallery.querySelectorAll("[data-photo-src]"));
+  const orbitSlots = {
+    "-2": { x: "-400px", y: "150px", r: "-14deg", s: "0.74" },
+    "-1": { x: "-210px", y: "52px", r: "-7deg", s: "0.86" },
+    "0": { x: "0px", y: "10px", r: "0deg", s: "0.96" },
+    "1": { x: "210px", y: "52px", r: "7deg", s: "0.86" },
+    "2": { x: "400px", y: "150px", r: "14deg", s: "0.74" },
+  };
+
+  if (!mainImage || !title || !caption || !counter) return;
+
+  const setOrbitPosition = (activeIndex) => {
+    const midpoint = Math.floor(items.length / 2);
+
+    items.forEach((item, index) => {
+      let offset = index - activeIndex;
+
+      if (offset > midpoint) offset -= items.length;
+      if (offset < -midpoint) offset += items.length;
+
+      const slot = orbitSlots[String(offset)] || orbitSlots["0"];
+      item.style.setProperty("--x", slot.x);
+      item.style.setProperty("--y", slot.y);
+      item.style.setProperty("--r", slot.r);
+      item.style.setProperty("--s", slot.s);
+    });
+  };
+
+  const setActivePhoto = (item, activeIndex) => {
+    mainImage.setAttribute("src", item.getAttribute("data-photo-src"));
+    mainImage.setAttribute("alt", item.getAttribute("data-photo-alt"));
+    title.textContent = item.getAttribute("data-photo-title");
+    caption.textContent = item.getAttribute("data-photo-caption");
+    counter.textContent = item.getAttribute("data-photo-counter");
+    setOrbitPosition(activeIndex);
+
+    items.forEach((button) => {
+      button.classList.toggle("is-active", button === item);
+    });
+  };
+
+  items.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      setActivePhoto(item, index);
+    });
+  });
+
+  setOrbitPosition(0);
 });
 
 if (reducedMotionQuery.matches) {
