@@ -1207,6 +1207,29 @@ h2 {
   margin-top: var(--space-5);
 }
 
+.visual-category-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+  padding: 0 0 var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.visual-category-heading h2 {
+  margin: 10px 0 0;
+  font-size: clamp(30px, 4vw, 52px);
+}
+
+.visual-category-heading > p {
+  max-width: 390px;
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.7;
+  text-align: right;
+}
+
 .photography-panel {
   overflow: hidden;
 }
@@ -1422,6 +1445,18 @@ h2 {
   height: auto;
 }
 
+.visual-video-figure {
+  aspect-ratio: 16 / 9;
+}
+
+.visual-gallery video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #090815;
+  object-fit: contain;
+}
+
 .deck-viewer {
   position: sticky;
   top: 112px;
@@ -1603,6 +1638,17 @@ h2 {
 
   .visual-gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .visual-category-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .visual-category-heading > p {
+    max-width: 560px;
+    text-align: left;
   }
 
   .world-cup-gallery {
