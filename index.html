@@ -40,6 +40,7 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#work">Work</a>
+          <a href="#books">Books</a>
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
         </div>
@@ -354,6 +355,92 @@
               </div>
             </div>
           </a>
+        </div>
+      </section>
+
+      <section class="content-section reading-section" id="books" aria-labelledby="books-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Reading Library / 阅读书籍库</p>
+          <h2 id="books-title">A shelf for ideas in motion.</h2>
+        </div>
+
+        <div class="reading-intro reveal" data-language-switcher>
+          <div class="language-toggle" aria-label="Language selector">
+            <button type="button" class="is-active" data-language-button="en">EN</button>
+            <button type="button" data-language-button="zh">中文</button>
+          </div>
+          <div data-language-panel="en">
+            <p>
+              A small reading library for the books that sharpen my view of people, culture,
+              design, and technology. Select a spine to bring it forward and open its note.
+            </p>
+          </div>
+          <div data-language-panel="zh" hidden>
+            <p>
+              一个记录阅读与思考的书籍库，收藏那些帮助我理解用户、文化、设计与技术的书。点击书脊，
+              让它来到中央，并展开对应的阅读记录。
+            </p>
+          </div>
+        </div>
+
+        <div class="reading-experience reveal" data-reading-shelf>
+          <div class="reading-shelf-stage">
+            <div class="reading-shelf-topline">
+              <span>01 / INDEX</span>
+              <span data-book-counter>01 / 12</span>
+            </div>
+            <div class="book-orbit" role="list" aria-label="Reading library" data-book-orbit></div>
+            <div class="bookshelf-rail" aria-hidden="true"></div>
+            <p class="reading-shelf-hint">Select a book to bring it forward / 点击书脊查看</p>
+          </div>
+
+          <aside class="book-detail" aria-live="polite">
+            <div class="book-detail-cover" aria-hidden="true" data-book-cover>
+              <img class="book-detail-cover-image" data-book-cover-image hidden alt="" />
+              <span class="book-detail-index" data-book-index>01</span>
+              <strong data-book-cover-title>Book 01</strong>
+              <span data-book-cover-author>Title pending</span>
+            </div>
+            <div class="book-detail-copy" data-language-switcher>
+              <div class="language-toggle" aria-label="Language selector">
+                <button type="button" class="is-active" data-language-button="en">EN</button>
+                <button type="button" data-language-button="zh">中文</button>
+              </div>
+              <div data-language-panel="en">
+                <p class="section-kicker">Current selection</p>
+                <h3 data-book-title-en>Your reading list</h3>
+                <p data-book-description-en>
+                  This shelf is ready for the books that shape your thinking. Send me the titles
+                  and I will add researched cover cut-outs, a short note, and the full bilingual
+                  record.
+                </p>
+                <div class="book-detail-insight">
+                  <p class="section-kicker">Reading note</p>
+                  <p data-book-insight-en>Your reading note will appear here.</p>
+                </div>
+              </div>
+              <div data-language-panel="zh" hidden>
+                <p class="section-kicker">当前选中</p>
+                <h3 data-book-title-zh>你的阅读书单</h3>
+                <p data-book-description-zh>
+                  这个书架已经准备好承载影响你思考的书。把书名发给我，我会补充检索后的书封抠图、
+                  阅读短评和完整双语信息。
+                </p>
+                <div class="book-detail-insight">
+                  <p class="section-kicker">学习心得</p>
+                  <p data-book-insight-zh>你的学习心得会显示在这里。</p>
+                </div>
+              </div>
+              <div class="book-detail-meta">
+                <span data-book-author>Title pending / 书名待添加</span>
+                <span data-book-category>Reading library / 阅读书籍库</span>
+              </div>
+              <div class="book-detail-controls" aria-label="Book navigation">
+                <button type="button" class="icon-button" data-book-prev aria-label="Previous book">&lt;</button>
+                <button type="button" class="icon-button" data-book-next aria-label="Next book">&gt;</button>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
 
