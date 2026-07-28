@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="860" viewBox="0 0 600 860" role="img" aria-labelledby="title desc">
+  <title id="title">产品思维 30 讲</title>
+  <desc id="desc">An original portfolio cover for 30 Lectures on Product Thinking by Liang Ning.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3a27f"/>
+      <stop offset="0.48" stop-color="#a8525a"/>
+      <stop offset="1" stop-color="#6f344c"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbe6cb" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fbe6cb" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#fbe6cb" stroke-opacity="0.16" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#3a172c" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="600" height="860" fill="url(#paper)"/>
+  <rect x="34" y="34" width="532" height="792" rx="2" fill="url(#grid)"/>
+  <path d="M-60 664C90 576 142 718 276 586S470 470 666 576" fill="none" stroke="#fbe6cb" stroke-opacity="0.2" stroke-width="2"/>
+  <path d="M-80 710C106 602 168 778 314 638S510 532 672 636" fill="none" stroke="#fbe6cb" stroke-opacity="0.14" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <circle cx="326" cy="400" r="142" fill="none" stroke="url(#ink)" stroke-width="2"/>
+    <circle cx="326" cy="400" r="102" fill="none" stroke="#fbe6cb" stroke-opacity="0.72" stroke-width="1.5"/>
+    <circle cx="326" cy="400" r="58" fill="#fbe6cb" fill-opacity="0.08" stroke="#fbe6cb" stroke-width="2"/>
+    <path d="M326 258V542M184 400H468M226 300L426 500M426 300L226 500" fill="none" stroke="#fbe6cb" stroke-opacity="0.54" stroke-width="1.5"/>
+    <circle cx="326" cy="400" r="9" fill="#fbe6cb"/>
+    <circle cx="326" cy="258" r="6" fill="#e3a27f" stroke="#fbe6cb" stroke-width="2"/>
+    <circle cx="468" cy="400" r="6" fill="#e3a27f" stroke="#fbe6cb" stroke-width="2"/>
+    <circle cx="326" cy="542" r="6" fill="#e3a27f" stroke="#fbe6cb" stroke-width="2"/>
+    <circle cx="184" cy="400" r="6" fill="#e3a27f" stroke="#fbe6cb" stroke-width="2"/>
+  </g>
+  <text x="58" y="84" fill="#fbe6cb" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3">JOYCEYA READING LIBRARY</text>
+  <text x="58" y="151" fill="#fbe6cb" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="4">PRODUCT THINKING</text>
+  <text x="58" y="206" fill="#fff2df" font-family="Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" font-size="39" font-weight="700">产品思维 30 讲</text>
+  <text x="60" y="238" fill="#fbe6cb" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2">30 LECTURES ON PRODUCT THINKING</text>
+  <text x="60" y="772" fill="#fbe6cb" font-family="Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" font-size="17">梁宁 / LIANG NING</text>
+  <text x="60" y="802" fill="#fbe6cb" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">CONTEXT · HUMAN NEEDS · DECISIONS</text>
+  <text x="535" y="790" fill="#fbe6cb" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="end">02</text>
+</svg>
