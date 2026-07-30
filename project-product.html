@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="今天吃什么产品设计案例：从职场午餐场景、决策模型到社区增长与商业化的完整产品链路。"
+    />
+    <title>今天吃什么 - Product Design Case</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./src/assets/logo.png" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="detail-body">
+    <header class="site-header is-scrolled">
+      <nav class="site-nav" aria-label="Project navigation">
+        <a class="brand" href="./index.html#home" aria-label="Back to joyceya home">
+          <img src="./src/assets/logo.png" width="147" height="32" alt="joyceya" />
+        </a>
+        <a class="btn btn-secondary" href="./index.html#work" aria-label="Back to selected works">
+          Back to Home
+          <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-hero reveal">
+        <div class="detail-copy">
+          <p class="section-kicker">Product Design / 产品设计</p>
+          <h1>今天吃什么</h1>
+          <p>
+            从“午休时间有限却难以快速决定吃什么”出发，将用户偏好、现实约束和本地供给
+            转化为可解释的推荐产品，并延伸到饮食记录、社区运营与会员服务。
+          </p>
+        </div>
+        <aside class="detail-meta" aria-label="Project information">
+          <div><span>Role</span><p>独立产品经理 / AI 辅助原型搭建</p></div>
+          <div><span>Scenario</span><p>上海漕河泾职场午餐决策</p></div>
+          <div><span>Output</span><p>PRD、决策模型、信息架构、PWA Demo</p></div>
+          <div><span>Status</span><p>可交互 MVP · GitHub Pages 在线运行</p></div>
+        </aside>
+      </section>
+
+      <section class="detail-panel product-case-section reveal" aria-labelledby="product-framework-title">
+        <div class="product-showcase">
+          <figure>
+            <img
+              src="./src/assets/project-today-eat.jpg"
+              alt="今天吃什么产品的今日推荐与午餐筛选界面"
+            />
+            <figcaption>
+              Desktop PWA · 今日推荐页<br />
+              漕河泾商户、价格、排队与配送时效为 Demo 模拟数据
+            </figcaption>
+          </figure>
+          <a
+            class="btn btn-primary product-demo-link"
+            href="https://zhousongyao531-art.github.io/today-eat/"
+            target="_blank"
+            rel="noopener"
+          >
+            打开在线 Demo
+            <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+          </a>
+        </div>
+
+        <div class="product-framework" data-language-switcher>
+          <div class="language-toggle" aria-label="Language selector">
+            <button type="button" class="is-active" data-language-button="zh">中文</button>
+            <button type="button" data-language-button="en">EN</button>
+          </div>
+
+          <div data-language-panel="zh">
+            <p class="section-kicker">End-to-end Product Thinking</p>
+            <h2 id="product-framework-title">从午休困境到可验证产品</h2>
+            <p class="framework-lead">
+              核心不是再做一个“随机选菜器”，而是把真实午休约束转化为清晰、可解释、能持续学习的决策系统。
+            </p>
+
+            <ol class="framework-flow">
+              <li>
+                <span class="framework-index">01</span>
+                <div><h3>场景定位</h3><p>聚焦工作日 12:00–13:00 的高频决策：时间短、选择多、信息分散，用户需要在堂食、外卖和便当三条路径间快速取舍。</p></div>
+              </li>
+              <li>
+                <span class="framework-index">02</span>
+                <div><h3>用户与需求拆解</h3><p>以漕河泾职场人为核心用户，拆分预算、距离、排队、用餐时长、口味、忌口、营养目标和做饭水平，区分必须满足与偏好加分。</p></div>
+              </li>
+              <li>
+                <span class="framework-index">03</span>
+                <div><h3>决策模型</h3><p>先用午休时间、预算、步行 / 送达 / 备餐上限和忌口做硬过滤，再按少排队、少走路、人均更低、高蛋白与配送稳定度排序。</p></div>
+              </li>
+              <li>
+                <span class="framework-index">04</span>
+                <div><h3>MVP 与产品结构</h3><p>搭建今日推荐、堂食 / 外卖 / 便当、饮食记录、个人画像和漕河泾午饭社区；设置变化会实时驱动推荐结果，验证决策链路。</p></div>
+              </li>
+              <li>
+                <span class="framework-index">05</span>
+                <div><h3>社区增长</h3><p>用推荐、附近、关注与热榜组织本地内容，以探店笔记、点赞、收藏、评论和话题沉淀真实体验，降低试错并形成回访理由。</p></div>
+              </li>
+              <li>
+                <span class="framework-index">06</span>
+                <div><h3>商业化与下一步</h3><p>IAP 会员承载 AI 饮食管家、营养和健身方案；后续接入定位、商户、排队与配送接口，并用决策时长、推荐采纳率和 7 日留存验证价值。</p></div>
+              </li>
+            </ol>
+
+            <div class="framework-chain" aria-label="产品链路总结">
+              <span>场景定义</span><i>→</i><span>用户拆解</span><i>→</i><span>决策建模</span><i>→</i><span>MVP 验证</span><i>→</i><span>社区增长</span><i>→</i><span>商业化</span>
+            </div>
+          </div>
+
+          <div data-language-panel="en" hidden>
+            <p class="section-kicker">End-to-end Product Thinking</p>
+            <h2>From lunch friction to a testable product</h2>
+            <p class="framework-lead">
+              The goal was not another random meal picker, but an explainable decision system built around real lunch-break constraints.
+            </p>
+
+            <ol class="framework-flow">
+              <li><span class="framework-index">01</span><div><h3>Scenario</h3><p>Focus on the recurring 12:00–13:00 workplace lunch decision, where limited time, excessive choice, and fragmented information compete across dine-in, delivery, and bento routes.</p></div></li>
+              <li><span class="framework-index">02</span><div><h3>User needs</h3><p>Translate budget, distance, queueing, eating time, taste, allergies, nutrition goals, and cooking ability into must-have constraints and preference signals.</p></div></li>
+              <li><span class="framework-index">03</span><div><h3>Decision model</h3><p>Filter first by time, budget, travel or delivery limit, and dietary restrictions; then rank by queue time, distance, price, protein, and delivery stability.</p></div></li>
+              <li><span class="framework-index">04</span><div><h3>MVP structure</h3><p>Build Today, dine-in / delivery / bento, food records, preference profile, and the Caohejing lunch community. Updated settings immediately change the recommendation set.</p></div></li>
+              <li><span class="framework-index">05</span><div><h3>Community growth</h3><p>Use Recommended, Nearby, Following, and Ranking feeds with posts, likes, saves, comments, and local topics to capture real experience and create a reason to return.</p></div></li>
+              <li><span class="framework-index">06</span><div><h3>Business and iteration</h3><p>Use IAP membership for an AI diet assistant and nutrition plans; connect real location, merchant, queue, and delivery data, then validate decision time, adoption, and 7-day retention.</p></div></li>
+            </ol>
+
+            <div class="framework-chain" aria-label="Product process summary">
+              <span>Scenario</span><i>→</i><span>Needs</span><i>→</i><span>Model</span><i>→</i><span>MVP</span><i>→</i><span>Growth</span><i>→</i><span>Business</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-panel product-outcome reveal">
+        <p class="section-kicker">Product Judgment</p>
+        <h2>先验证“更快做决定”，再扩展营养与交易价值</h2>
+        <p>
+          当前 Demo 重点验证推荐逻辑、信息层级与跨场景体验，不用模拟数据包装业务结果。
+          第一阶段以完成一次午餐决策所需时间和推荐采纳率为北极星指标；只有核心决策价值成立后，
+          才逐步引入真实供给数据、个性化营养服务和商业合作。
+        </p>
+      </section>
+
+      <div class="back-row reveal">
+        <a class="btn btn-primary" href="./index.html#work">
+          Back to Home
+          <span class="btn-arrow" aria-hidden="true">-&gt;</span>
+        </a>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
