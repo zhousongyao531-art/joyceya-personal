@@ -556,7 +556,6 @@ if (readingShelf) {
     books.forEach((book) => {
       const button = document.createElement("button");
       const spine = document.createElement("span");
-      const coverImage = document.createElement("img");
       const indexLabel = document.createElement("span");
       const titleLabel = document.createElement("span");
       const statusLabel = document.createElement("span");
@@ -567,16 +566,8 @@ if (readingShelf) {
       button.setAttribute("aria-label", `Open ${book.titleEn}`);
       button.setAttribute("aria-pressed", "false");
       spine.className = "book-spine";
-      if (book.cover) spine.classList.add("has-cover");
       spine.style.setProperty("--book-color", book.color);
       spine.style.setProperty("--book-accent", book.accent);
-      if (book.cover) {
-        coverImage.className = "book-spine-cover";
-        coverImage.src = book.cover;
-        coverImage.alt = "";
-        coverImage.setAttribute("aria-hidden", "true");
-        spine.append(coverImage);
-      }
       indexLabel.className = "book-spine-index";
       indexLabel.textContent = book.index;
       titleLabel.className = "book-spine-title";
